@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- tipografia de iconos -->
     <script src="https://kit.fontawesome.com/28dabd3ed1.js" crossorigin="anonymous"></script>
+    <!-- CSS BT -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- link de css -->
     <link rel="stylesheet" href="../css/main.css">
     <!--link de tipografia -->
@@ -46,10 +48,22 @@
         </div>
         
         <!--menu de perfil -->
-
+        
         <div class="perfil">
-            <i class="fa-solid fa-bars"></i>
-            <i class="fa-solid fa-house"></i>
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li> <a class="dropdown-item" href="../pages/acerca.html"> Acerca </a> </li>
+                  <li> <a class="dropdown-item" href="../pages/calzado.html"> Calzado </a> </li>
+                  <li> <a class="dropdown-item" href="../pages/accesorios.html"> Accesorios </a> </li>
+                  <li> <a class="dropdown-item" href="../pages/exclusivos.html"> Exclusivo </a> </li>
+                  
+                </ul>
+              </div>
+              
+            <li class="list-unstyled"> <a class="perfilBoton" href="../index.html"> <i class="fa-solid fa-house"> </i> </a> </li>
             <i class="fa-solid fa-user"></i>
             <i class="fa-solid fa-bag-shopping"></i>
             <i class="fa-solid fa-heart-circle-plus"></i>
@@ -125,3 +139,7 @@
         </div>    
 
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+</body>
