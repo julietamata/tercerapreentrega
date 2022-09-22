@@ -1,0 +1,432 @@
+
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilo general*/
+
+body{
+    font-family: 'Nunito', sans-serif;
+    background-color: #F7F5F2;
+    color: #212121;   
+}
+
+
+/* estilos del header de los 5html version mobile*/
+
+
+.contenedorHeader{
+    display: grid;
+    grid-template-columns: .5fr 2fr;
+    grid-template-rows: 3fr 1fr;
+    grid-template-areas: 
+    "encabezado encabezado"
+    "busqueda perfil ";
+}
+.encabezado{
+    grid-area: encabezado;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.busqueda{
+    grid-area: busqueda;
+    display: flex;
+    justify-content: center;
+    font-size: 2vh;
+    align-items: center;
+    padding: 1rem;
+}
+.perfil{
+    grid-area: perfil;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: .5rem;
+    font-size: 3.5vh;
+    
+}
+.navegacion{
+    display: none;
+}
+
+
+
+/* estilo de encabezado del header*/
+h1{
+    font-family: 'Poiret One', cursive;
+    font-size: 7.5vh;
+    margin: 1rem;
+}
+.firma{
+    width: 13vh   
+}
+
+/* estilo de perfil del header */
+
+.perfilBoton{
+    color: black;
+}
+
+
+
+/*estilos del main del htmlacerca version mobile*/
+
+.imgrostrosara{
+    width: 15rem;
+}
+
+.imgrostrosarados{
+    display: none;
+}
+
+.mainAcerca{
+    margin: 1rem;
+
+    display: grid;
+    grid-template-areas: 
+    "mainAcerca__parteuno"
+    "mainAcerca__partedos"
+    "mainAcerca__partetres"
+    ;
+}
+
+.mainAcerca__parteuno{
+    grid-area: mainAcerca__parteuno;
+    display: flex; 
+    text-align: justify;  
+    align-items: center;
+    font-size: 2.1vh;   
+}
+.mainAcerca__partedos{
+    grid-area: mainAcerca__partedos;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    
+}
+.mainAcerca__partetres{
+    grid-area: mainAcerca__partetres;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 2.3vh;
+}
+.imagentrabajando{
+    width: 35vh;
+    border-radius: 10px;
+}
+
+.imgcostadouno{
+    display: none;
+}
+.imgcostadodos{
+    display: none;
+}
+
+.mainAcerca__partetres--extra{
+    display: none;
+}
+
+
+
+/*estilos del footer de los 5html version mobile*/
+
+.footer{
+    background-color: #D6D2C4;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "footerRedes footerDerechos"
+    "footerAplicaciones footerDerechos";
+}
+
+.footerRedes{
+    grid-area: footerRedes;
+    font-size: 2.5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.footerDerechos{
+    grid-area: footerDerechos;
+    padding: 1rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.footerAplicaciones{
+    grid-area: footerAplicaciones;
+    font-size: 2.5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+/* estilos de la version desktop */
+
+
+
+@media screen and (min-width:768px){
+    
+    /* estilos del header de los 5html version desktop */
+
+    
+header{
+    display: flex;
+ }
+
+h1{
+    font-family: 'Poiret One', cursive;
+    font-size: 8.5vh;
+    margin: 1rem;
+}
+
+.firma{
+ width: 10%;
+ height: 70%;
+ }
+
+ nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 1rem;
+    
+}
+
+li{
+    margin: 1rem;
+}
+
+nav{
+    justify-content: end;
+}
+
+.busqueda{
+    display: flex;
+    flex-direction: start;
+}
+
+.contenedorHeader{
+    display: grid;
+    grid-template-columns: 1.9fr 1.5fr .5fr;
+    grid-template-rows: 1.5fr 1fr 1fr;
+    grid-template-areas: 
+    "encabezado busqueda perfil"
+    "encabezado navegacion navegacion"
+    "encabezado navegacion navegacion";
+}
+
+.encabezado{
+    grid-area: encabezado;
+    display: flex;
+    flex-direction: start;
+    align-items: flex-start;
+}
+.busqueda{
+    grid-area: busqueda;
+    display: flex;
+    justify-content: right;
+    font-size: 2vh;
+    align-items: center;
+    padding: 1rem;
+    
+}
+.navegacion{
+    grid-area: navegacion;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    font-size: 3vh;
+}
+
+.navegacionBoton{
+    text-decoration: none;
+    color: #212121;
+}
+
+.navegacionBoton:hover{
+    font-size:3.3vh;
+    
+}
+
+.perfil{
+    grid-area: perfil;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: .5rem;
+    font-size: 2.5vh;
+    
+}
+
+.dropdown{
+    display: none;
+}
+
+/* estilos del main del htmlacerca version desktop*/
+
+
+
+.imgrostrosara{
+    width: 20rem;
+}
+
+.imgrostrosarados{
+    display: block;
+    width: 20rem;
+}
+
+.mainAcerca{
+    margin: 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows: .8fr .6fr 1.5fr;
+    grid-template-areas: 
+    "mainAcerca__parteuno mainAcerca__parteuno mainAcerca__parteuno"
+    "imgcostadouno mainAcerca__partedos imgcostadodos"
+    "imgcostadouno mainAcerca__partetres imgcostadodos"
+    ;
+}
+
+.mainAcerca__parteuno{
+    
+    grid-area: mainAcerca__parteuno;
+    
+    display: flex; 
+    text-align: justify;  
+    align-items: center;
+    font-size: 3.1vh;   
+}
+.mainAcerca__partedos{
+    grid-area: mainAcerca__partedos;
+    display: flex;
+    padding: 1rem;
+    
+}
+.mainAcerca__partetres{
+    grid-area: mainAcerca__partetres;
+    display: flex;
+    align-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    font-size: 3.3vh;
+}
+.imagentrabajando{
+    width: 100vh;
+    margin-top: 3rem;
+    border-radius: 15px;
+}
+
+.imgcostadouno{
+    display: block;
+    grid-area: imgcostadouno;
+    justify-content: center;
+
+    animation-name: animacion;
+    animation-duration: 10s;
+    animation-iteration-count:initial; 
+}
+
+@keyframes animacion {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(1500px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.imgcostadodos{
+    display: block;
+    grid-area: imgcostadodos;
+    justify-content: center;
+}
+
+.imgcostadodos{
+    width: 20%;
+    animation-name: animaciondos;
+    animation-duration: 10s;
+    animation-iteration-count:initial;
+}
+
+@keyframes animaciondos {
+    0%{
+        transform: translateX(0);
+        
+    }
+    50%{
+        transform: translateX(-1500px);
+        
+    }
+    100%{transform: translateX(0);
+        
+    }
+}
+
+.mainAcerca__partetres--extra{
+    display: block;
+}
+
+main section div p{
+    margin: 1rem;
+}
+
+
+/* estilos del footer de los 5html version desktop */
+
+.footer{
+    background-color: #D6D2C4;
+    display: grid;
+    grid-template-columns: .5fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "footerRedes footerDerechos"
+    "footerAplicaciones footerDerechos";
+}
+
+.footerRedes{
+    grid-area: footerRedes;
+    font-size: 2.5vh;
+    display: flex;
+    align-content: space-around;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.footerDerechos{
+    grid-area: footerDerechos;
+    padding: 1rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.footerAplicaciones{
+    grid-area: footerAplicaciones;
+    font-size: 2.5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+}
+
+
+
+
