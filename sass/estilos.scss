@@ -1,0 +1,39 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@import "utilities/variables";
+@import "utilities/mixin";
+@import "utilities/extend";  
+
+
+
+body{
+    padding-bottom: 10rem;
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    background-color: $color-backgroundprincipal;
+    color: #212121;  
+    overflow-x: hidden
+  }
+
+
+@import "partials/header";
+
+@import "pages/inicio";
+
+@import "pages/acerca";
+
+@import "pages/accesorios";
+
+@import "pages/exclusivos";
+
+@import "partials/footer";
+

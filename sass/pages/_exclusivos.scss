@@ -1,0 +1,154 @@
+/* estilos del main de exclusivos */
+
+@import "../utilities/variables";
+@import "../utilities/mixin";
+
+.bodyExclusivos{
+
+@extend %overflow;
+
+    .mainExclusivos{
+    margin: $margin-general;
+
+    //* estilos del main exclusivos version mobile*//
+
+    .contenedorExclusivos{
+        display: flex;
+        flex-direction: column;
+
+        .exclusivosImagenuno{
+            grid-area: informacionuno;
+            
+            img{
+                @include imagenes;
+            }
+        }
+
+        .exclusivosImagendos{
+            grid-area: informaciondos;
+            
+            img{
+                @include imagenes;
+            }
+        }
+
+        .exclusivosImagentres{
+            grid-area: informaciontres;
+            
+            img{
+                @include imagenes;
+            }
+        }
+
+        .exclusivosUbicacion{
+            grid-area: ubicacion;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            iframe{
+                width: 60vh;
+            }
+        }
+
+        .exclusivosContacto{
+            
+            grid-area: contacto;
+            display: flex;
+            flex-direction: column;   
+            justify-content: center;
+            align-items: center;
+            
+            margin: 1rem;
+            
+            ul{
+                @include lista;
+
+                li{
+                    a{
+                    text-decoration: none;
+                    color: black;}
+                }
+            }
+        }
+    }
+
+    //* estilos del main exclusivos version desktop *//
+    @media screen and (min-width: 1080px) {    
+    .contenedorExclusivos{
+        display: grid;
+        grid-template-columns: 1fr .5fr .5fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        
+        "informacionuno informaciondos informaciondos"
+        "informaciontres ubicacion contacto";
+        
+
+        .exclusivosImagenuno{
+            grid-area: informacionuno;
+            
+            img{
+                @include imagenes;
+            }
+        }
+
+        .exclusivosImagendos{
+            grid-area: informaciondos;
+            
+            img{
+                @include imagenes;
+            }
+        }
+
+        .exclusivosImagentres{
+            grid-area: informaciontres;
+            
+            img{
+                @include imagenes;
+            }
+        }
+
+        .exclusivosUbicacion{
+            grid-area: ubicacion;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            iframe{
+                width: 50vh;
+            }
+        }
+
+        .exclusivosContacto{
+            
+            grid-area: contacto;
+            display: flex;
+            flex-direction: column;   
+            justify-content: center;
+            margin: 1rem;
+            
+            ul{
+                @include lista;
+
+                li{
+                    a{
+                    text-decoration: none;
+                    color: black;}
+                }
+            }
+        }
+
+        
+
+
+      }  
+      
+
+    }
+    }
+}
+
+
+
+
+
+    @import "../utilities/extend"

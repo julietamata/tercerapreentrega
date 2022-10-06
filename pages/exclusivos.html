@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="exclusivos" >
+    <meta  name="keywords" content="accesorios, calzado, diseñadora, diseños, telas, vestidos, trajes, colecciones">
     <!-- tipografia de iconos -->
     <script src="https://kit.fontawesome.com/28dabd3ed1.js" crossorigin="anonymous"></script>
+    <!-- CSS BT -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- link de css -->
     <link rel="stylesheet" href="../css/main.css">
     <!--link de tipografia -->
@@ -15,7 +19,7 @@
 <title> EXCLUSIVOS </title>
     
 </head>
-<body>
+<body class="bodyExclusivos">
     <!-- contenido header -->
 
     <header class="contenedorHeader">
@@ -46,9 +50,22 @@
         </div>
         
         <!--menu de perfil -->
-
+        
         <div class="perfil">
-            <i class="fa-solid fa-house"></i>
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li> <a class="dropdown-item" href="../pages/acerca.html"> Acerca </a> </li>
+                  <li> <a class="dropdown-item" href="../pages/calzado.html"> Calzado </a> </li>
+                  <li> <a class="dropdown-item" href="../pages/accesorios.html"> Accesorios </a> </li>
+                  <li> <a class="dropdown-item" href="../pages/exclusivos.html"> Exclusivo </a> </li>
+                  
+                </ul>
+              </div>
+              
+            <li class="list-unstyled"> <a class="perfilBoton" href="../index.html"> <i class="fa-solid fa-house"> </i> </a> </li>
             <i class="fa-solid fa-user"></i>
             <i class="fa-solid fa-bag-shopping"></i>
             <i class="fa-solid fa-heart-circle-plus"></i>
@@ -59,55 +76,37 @@
 
     </header>
 
+    
     <!-- contenido main -->
 
-    <main class="mainpages">
-        <h5>
-            EXCLUSIVOS
-        </h5>
-        <!-- formulario de tallas -->
-        <section>
-            <form action=""></form>
-                <fieldset>
-                    <legend>
-                        Mis medidas
-                    </legend>
+    <main class="mainExclusivos">
+        
+       <section class="contenedorExclusivos">
 
-                    <div>
-                        <label for="cintura"> Contorno cintura </label>
-                        <input type="number" id="cintura" placeholder="cm">
-                        
-                    </div>
-                    <div>
-                        <label for="cadera"> Contorno cadera </label>
-                        <input type="number" id="cadera" placeholder="cm">
-                    </div>
-                    <div>
-                        <label for="pecho"> Contorno pecho </label>
-                        <input type="number" id="pecho" placeholder="cm">
-                    </div>
-                    <div>
-                        <label for="brazo"> Largo brazo </label>
-                        <input type="number" id="brazo" placeholder="cm">
-                    </div>
-                    <div>
-                        <label for="pierna"> Largo pierna </label>
-                        <input type="number" id="pierna" placeholder="cm">
-                    </div>
-                    <div>
-                        <label for="hombro"> Hombro a Hombro</label>
-                        <input type="number" id="hombro" placeholder="cm">
-                    </div>
-                    <div>
-                        <input type="submit">
-                        <input type="reset">
-                    </div>
-                    
+          <div class="exclusivosImagenuno"><img src="../imagenes/exc1.png" alt="exclusivoscolecciones"> </div>
 
-                </fieldset>
+          <div class="exclusivosImagendos"><img src="../imagenes/exc2.png" alt="exclusivosunicos"></div>
 
-        </section>
-             
+          <div class="exclusivosImagentres"><img src="../imagenes/exc3.png" alt="exclusivosprendas"></div>
+          </div>
+              
+          <div class="exclusivosUbicacion">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7469.424052199368!2d-103.41772382357797!3d20.599814637790022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ace4d03d8653%3A0x4e25a1bec1dee45f!2sParques%20del%20Bosque%2C%2045609%20San%20Pedro%20Tlaquepaque%2C%20Jal.!5e0!3m2!1ses!2smx!4v1664954411519!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>  
+            
+          <div class="exclusivosContacto">
+          <h4> INFORMACIÓN DE CONTACTO </h4>
+          <ul>
+            <li> <a href="https://www.facebook.com/" target="_blank"><img src="../imagenes/facebook_icon-icons.com_59205.png" alt="facebook">     SARA MORCHIO </a> </li>
+            <li> <a href="https://web.whatsapp.com/" target="_blank"> <img src="../imagenes/Whatsapp_37229.png" alt="whatsapp">   +5233123456 </a> </li>
+            <li><a href="https://www.instagram.com/sara._.morchio/" target="_blank"> <img src="../imagenes/instagram.png" alt="instagram">   SARA._.MORCHIO </a>  </li>
+            <li> <a href="https://www.gmail.com/" target="_blank"> <img src="../imagenes/Gmail_29991.png" alt="gmail">   saramorchio@gmail.com </a> </li>             
+          </ul>
+        </div>
+
+      
+
+    </section>
     </main>
 
 
@@ -116,9 +115,9 @@
 
         <!--derechos-->
         <div class="footerDerechos">
-            <h3>
+            <h2>
                 © Sara Morchio. Todos los derechos reservados
-            </h3>
+            </h2>
        </div>
 
         <!--redes sociales-->
@@ -138,3 +137,8 @@
         </div>    
 
     </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    </body>

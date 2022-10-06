@@ -1,0 +1,21 @@
+@mixin font ($font-weight){
+    font-family: 'Poiret One', cursive;
+    font-size: 7.5vh;
+    margin: 1rem;
+    font-weight: $font-weight;
+}
+
+@mixin lista {
+    list-style-type:none;
+    margin-right: 1rem;
+    margin-top: .5rem;
+    padding: 1rem;
+}
+
+@mixin imagenes {
+    width: 90%;
+    margin: 1rem;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,12 @@
+@import "../utilities/variables";
+
+.bodyInicio{
+    @extend %overflow;
+    
+    main{
+        margin: $margin-general;
+        
+    }
+}
+
+@import "../utilities/extend"
