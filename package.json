@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/julietamata/saramorchioproyecto.git"
+    "url": "git+https://github.com/julietamata/tercerapreentrega.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/julietamata/saramorchioproyecto/issues"
+    "url": "https://github.com/julietamata/tercerapreentrega/issues"
   },
-  "homepage": "https://github.com/julietamata/saramorchioproyecto#readme",
+  "homepage": "https://github.com/julietamata/tercerapreentrega#readme",
   "dependencies": {
     "-": "^0.0.1",
     "D": "^1.0.0",
